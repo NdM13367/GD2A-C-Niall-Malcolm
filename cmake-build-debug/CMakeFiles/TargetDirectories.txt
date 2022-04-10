@@ -1,0 +1,3 @@
+C:/Users/niall/CLionProjects/GD2A C++ NiallMalcolm/cmake-build-debug/CMakeFiles/GD2A_C___NiallMalcolm.dir
+C:/Users/niall/CLionProjects/GD2A C++ NiallMalcolm/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/niall/CLionProjects/GD2A C++ NiallMalcolm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
