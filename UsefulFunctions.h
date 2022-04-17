@@ -9,7 +9,7 @@
 #include "Image.h"
 #include <map>
 
-int createWindow(HINSTANCE &hInstance, int &nCmdShow, HMENU &hMenubar) ;
+int createWindow(HINSTANCE &hInstance, int &nCmdShow, HMENU &hMenubar);
 void dblBuffer(HWND hWnd, HDC hdc, LPRECT rcClientRect);
 void processMenu(HWND hWnd, WPARAM wParam);
 string saveFilename(const  char *filter = "All Files (*.ppm)\0*.*\0", HWND owner = NULL);

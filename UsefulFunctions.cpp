@@ -170,5 +170,5 @@ void dblBuffer(HWND hWnd, HDC hdc, LPRECT rcClientRect, Image *image) {
     // all done, now we need to cleanup
     SelectObject( memDC, oldBmp ); // select back original bitmap
     DeleteObject( bmp ); // delete bitmap since it is no longer required
-    DeleteDC( memDC );
+    DeleteDC( memDC);
 }
