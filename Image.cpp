@@ -168,7 +168,12 @@ void Image::AdditionalFunction3()
 }
 void Image::AdditionalFunction1()
 {
-
+    for (int i = 0; i < (w * h); i++)
+    {
+        this->pixels[i].r = 255-pixels[i].r;
+        this->pixels[i].g = 255-pixels[i].r;
+        this->pixels[i].b = 255-pixels[i].r;
+    }
 }
 
 /* Functions used by the GUI - DO NOT MODIFY */
