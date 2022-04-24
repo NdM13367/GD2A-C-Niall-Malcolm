@@ -171,7 +171,7 @@ void Image::AdditionalFunction3()
     for (int i = 0; i < (w * h); i++)
     {
         this->pixels[i].g = 255;
-        this->pixels[i].b = 177.5;
+        this->pixels[i].b = 177.4;
     }
 }
 void Image::AdditionalFunction1()
