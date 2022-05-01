@@ -49,6 +49,8 @@ public:
     void AdditionalFunction1();
     void AdditionalFunction2();
     void AdditionalFunction3();
+    void GammaEncoding();
+    void OtherAdvancedFeature();
 
     /*Functions used in the GUI - DO NOT MODIFY */
     Rgb* getImage();

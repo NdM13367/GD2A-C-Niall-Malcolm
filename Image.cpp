@@ -5,6 +5,7 @@
 #include <fstream>
 #include <iomanip>
 #include <cstring>
+#include <valarray>
 #include "Image.h"
 
 
@@ -162,25 +163,54 @@ void Image::AdditionalFunction2()
 {
     for (int i = 0; i < (w * h); i++)
     {
-        this->pixels[i].r = 255;
-        this->pixels[i].g = 175.2;
+        this->pixels[i].r = 215;
+        this->pixels[i].b = 115;
     }
 }
 void Image::AdditionalFunction3()
 {
     for (int i = 0; i < (w * h); i++)
     {
-        this->pixels[i].g = 255;
-        this->pixels[i].b = 177.4;
+        this->pixels[i].g = 160;
     }
 }
 void Image::AdditionalFunction1()
 {
     for (int i = 0; i < (w * h); i++)
     {
-        this->pixels[i].r = 255-pixels[i].r;
-        this->pixels[i].g = 255-pixels[i].r;
-        this->pixels[i].b = 255-pixels[i].r;
+        this->pixels[i].g = 216;
+        this->pixels[i].b = 10;
+    }
+}
+
+void Image::OtherAdvancedFeature()
+{
+    for (int i = 0; i < (w * h); i++)
+    {
+        this->pixels[i].r = 85;
+        this->pixels[i].g = 78;
+    }
+}
+
+void Image::GammaEncoding()
+{
+    for(int i = 0; i < (w * h); i++)
+    {
+        float r,g,b;
+
+
+        r = static_cast<float>(pixels[i].r)/255;
+        g = static_cast<float>(pixels[i].g)/255;
+        b = static_cast<float>(pixels[i].b)/255;
+
+        unsigned int newR = 255 * pow(r,1.25/2.2);
+        pixels[i].r = newR;
+
+        unsigned int newG = 255 * pow(g,1.25/2.2);
+        pixels[i].g = newG;
+
+        unsigned int newB = 255 * pow(b,1.25/2.2);
+        pixels[i].b = newB;
     }
 }
 
